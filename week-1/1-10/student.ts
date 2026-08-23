@@ -1,6 +1,6 @@
 import { Person } from "./person";
 
-class Student extends Person {
+export class Student extends Person {
     public grade: string;
 
     public constructor(name: string, age: number, grade: string) {
