@@ -1,3 +1,4 @@
+import { simulateTask } from "./exercise5";
 Promise.all([
     simulateTask(1000),
     simulateTask(2000),
