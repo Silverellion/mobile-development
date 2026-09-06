@@ -1,3 +1,5 @@
+import { simulateTask } from "../basics-with-promise/exercise5";
+
 (async () => {
     const result1 = await simulateTask(1000);
     console.log(result1);

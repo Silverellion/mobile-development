@@ -1,3 +1,4 @@
+import { simulateTask } from "../basics-with-promise/exercise5";
 (async () => {
     const promises = [
       simulateTask(1000),
