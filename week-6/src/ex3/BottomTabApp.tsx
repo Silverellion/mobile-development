@@ -10,15 +10,15 @@ type TabParamList = { Home: undefined; Search: undefined; Profile: undefined };
 const Tab = createBottomTabNavigator<TabParamList>();
 // tên icon: [khi chọn, khi không chọn]
 const ICONS: Record<keyof TabParamList, [keyof typeof Ionicons.glyphMap, keyof typeof Ionicons.glyphMap]> = {
-Home: ["home", "home-outline"],
-Search: ["search", "search-outline"],
-Profile: ["person", "person-outline"],
+  Home: ["home", "home-outline"],
+  Search: ["search", "search-outline"],
+  Profile: ["person", "person-outline"],
 };
 function HomeTab() {
-return (
-<FlatList data={PHONES} keyExtractor={(p) => p.id} contentContainerStyle={{ padding: 16, gap: 10 }}
-renderItem={({ item }) => (<View style={s.card}><Text>{item.name.split(" - ")[0]}</Text></View>)} />
-);
+  return (
+    <FlatList data={PHONES} keyExtractor={(p) => p.id} contentContainerStyle={{ padding: 16, gap: 10 }}
+      renderItem={({ item }) => (<View style={s.card}><Text>{item.name.split(" - ")[0]}</Text></View>)} />
+  );
 }
 
 // TODO 1: SearchTab — const [keyword, setKeyword] = useState("");
@@ -52,8 +52,8 @@ function ProfileTab() {
   return (
     <View style={s.center}>
       <View style={s.avatar}><Text style={s.avatarText}>NA</Text></View>
-      <Text style={s.name}>Nguyễn Văn An</Text>
-      <Text style={s.email}>an.nguyen@example.com</Text>
+      <Text style={s.name}>Hoàng Trí Minh Tâm</Text>
+      <Text style={s.email}>test@example.com</Text>
     </View>
   );
 }

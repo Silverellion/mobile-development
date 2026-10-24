@@ -14,8 +14,8 @@ function ProfileScreen() {
   return (
     <View style={s.center}>
       <View style={s.avatar}><Text style={s.avatarText}>NA</Text></View>
-      <Text style={s.big}>Nguyễn Văn An</Text>
-      <Text style={s.muted}>an.nguyen@example.com</Text>
+      <Text style={s.big}>Hoàng Trí Minh Tâm</Text>
+      <Text style={s.muted}>test@example.com</Text>
     </View>
   );
 }
